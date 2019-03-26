@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>    
+
+<script >
+		function miFuncion()
+		{
+				var t1=document.getElementById("text2").value;
+				var t2=document.getElementById("text1").value;
+				if(t1=="admin" && t2 =="admin"){
+				location.href='/index';
+					
+				}
+				else{
+			alert("CREDENCIALES INVALIDAS");
+		}
+		}
+	</script>
+</head>
+<body>
+	<center>
+<h1>LOGIN</h1>
+<form>
+<label>Usuario     </label><input type="text" name="text1" id="text1">
+</br>
+</br>
+</br>
+<label>Contraseña  </label><input type="text" name="text2" id="text2">
+</br>
+</br>
+</br>
+<input type="button"
+onclick="miFuncion()"
+value="Ingresar">
+
+	
+</form>
+	<center>
+
+</body>
+</html>
